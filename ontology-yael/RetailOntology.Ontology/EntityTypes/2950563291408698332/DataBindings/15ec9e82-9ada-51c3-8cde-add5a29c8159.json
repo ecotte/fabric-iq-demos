@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "15ec9e82-9ada-51c3-8cde-add5a29c8159",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "cust_enga_score",
+        "targetPropertyId": "7916323625379188812"
+      },
+      {
+        "sourceColumnName": "ts",
+        "targetPropertyId": "1815574488093799076"
+      },
+      {
+        "sourceColumnName": "cust_id",
+        "targetPropertyId": "7073198799240369298"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "KustoTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "d8a49d57-2aae-8e95-413c-49034c14aaba",
+      "clusterUri": "https://trd-2cyqxwtqm58xnp1pej.z2.kusto.fabric.microsoft.com",
+      "databaseName": "EHOntologyRetail",
+      "sourceTableName": "customers"
+    }
+  }
+}

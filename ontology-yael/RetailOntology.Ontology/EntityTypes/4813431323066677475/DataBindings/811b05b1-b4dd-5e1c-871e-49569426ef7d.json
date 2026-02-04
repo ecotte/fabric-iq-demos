@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "811b05b1-b4dd-5e1c-871e-49569426ef7d",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "on_t_deli_rate",
+        "targetPropertyId": "2446462168188334252"
+      },
+      {
+        "sourceColumnName": "fuel_surc_pct",
+        "targetPropertyId": "6882075752359514972"
+      },
+      {
+        "sourceColumnName": "ts",
+        "targetPropertyId": "8821339486574479627"
+      },
+      {
+        "sourceColumnName": "car_id",
+        "targetPropertyId": "2754066534711390192"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "KustoTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "d8a49d57-2aae-8e95-413c-49034c14aaba",
+      "clusterUri": "https://trd-2cyqxwtqm58xnp1pej.z2.kusto.fabric.microsoft.com",
+      "databaseName": "EHOntologyRetail",
+      "sourceTableName": "carriers"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "dc6a9785-48ad-5890-b4fb-f1cf84b7083c",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "wh_id",
+        "targetPropertyId": "9026234749233224644"
+      },
+      {
+        "sourceColumnName": "reg_id",
+        "targetPropertyId": "174481007918406431"
+      },
+      {
+        "sourceColumnName": "wh_name",
+        "targetPropertyId": "5308482032259491894"
+      },
+      {
+        "sourceColumnName": "addr_line1",
+        "targetPropertyId": "7022900499951905084"
+      },
+      {
+        "sourceColumnName": "city_name",
+        "targetPropertyId": "2157790182675671699"
+      },
+      {
+        "sourceColumnName": "state_or_prov",
+        "targetPropertyId": "1192778903313806123"
+      },
+      {
+        "sourceColumnName": "postal_code",
+        "targetPropertyId": "6121969302674307116"
+      },
+      {
+        "sourceColumnName": "is_cross_dock",
+        "targetPropertyId": "8793478229914023656"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "232fcd18-8a2a-a8fb-4e81-99f0c1ba4a21",
+      "sourceTableName": "warehouses",
+      "sourceSchema": "dbo"
+    }
+  }
+}

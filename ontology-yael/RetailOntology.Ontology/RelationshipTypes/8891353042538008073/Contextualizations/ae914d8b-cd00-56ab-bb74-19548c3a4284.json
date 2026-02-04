@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "ae914d8b-cd00-56ab-bb74-19548c3a4284",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "232fcd18-8a2a-a8fb-4e81-99f0c1ba4a21",
+    "sourceTableName": "returns",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "rtn_id",
+      "targetPropertyId": "8545424404732037542"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ord_id",
+      "targetPropertyId": "7077549924453008204"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "2391902a-2ee6-5456-8ba9-926b6b60a139",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "in_tran_temp_c",
+        "targetPropertyId": "6347333176169942084"
+      },
+      {
+        "sourceColumnName": "in_tran_hum_pct",
+        "targetPropertyId": "1602806220131915969"
+      },
+      {
+        "sourceColumnName": "cur_lat",
+        "targetPropertyId": "7351760910723723301"
+      },
+      {
+        "sourceColumnName": "cur_lon",
+        "targetPropertyId": "4700613036035175375"
+      },
+      {
+        "sourceColumnName": "delay_min",
+        "targetPropertyId": "289509684160101429"
+      },
+      {
+        "sourceColumnName": "ts",
+        "targetPropertyId": "6050226620023662086"
+      },
+      {
+        "sourceColumnName": "shp_id",
+        "targetPropertyId": "6148768780093470309"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "KustoTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "d8a49d57-2aae-8e95-413c-49034c14aaba",
+      "clusterUri": "https://trd-2cyqxwtqm58xnp1pej.z2.kusto.fabric.microsoft.com",
+      "databaseName": "EHOntologyRetail",
+      "sourceTableName": "shipments"
+    }
+  }
+}

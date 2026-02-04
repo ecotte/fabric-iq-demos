@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "e3ac1561-54dd-524b-8da3-af993ead3a8e",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "232fcd18-8a2a-a8fb-4e81-99f0c1ba4a21",
+    "sourceTableName": "warehouses",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "wh_id",
+      "targetPropertyId": "9026234749233224644"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "reg_id",
+      "targetPropertyId": "6320393367239333108"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "fb02c6de-129e-57cb-9827-8b52e00a587c",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "prod_cat_id",
+        "targetPropertyId": "57227045911587750"
+      },
+      {
+        "sourceColumnName": "cat_name",
+        "targetPropertyId": "1513668844041873576"
+      },
+      {
+        "sourceColumnName": "depa_name",
+        "targetPropertyId": "8312104390407094186"
+      },
+      {
+        "sourceColumnName": "is_peri",
+        "targetPropertyId": "7830023699657302034"
+      },
+      {
+        "sourceColumnName": "shelf_life_days",
+        "targetPropertyId": "4347631116516723763"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "232fcd18-8a2a-a8fb-4e81-99f0c1ba4a21",
+      "sourceTableName": "product_categories",
+      "sourceSchema": "dbo"
+    }
+  }
+}

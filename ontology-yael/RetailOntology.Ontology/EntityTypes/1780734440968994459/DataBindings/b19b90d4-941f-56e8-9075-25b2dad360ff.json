@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "b19b90d4-941f-56e8-9075-25b2dad360ff",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "ts",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "weat_disr_index",
+        "targetPropertyId": "1862679756034115545"
+      },
+      {
+        "sourceColumnName": "ts",
+        "targetPropertyId": "4685560676407796007"
+      },
+      {
+        "sourceColumnName": "reg_id",
+        "targetPropertyId": "6320393367239333108"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "KustoTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "d8a49d57-2aae-8e95-413c-49034c14aaba",
+      "clusterUri": "https://trd-2cyqxwtqm58xnp1pej.z2.kusto.fabric.microsoft.com",
+      "databaseName": "EHOntologyRetail",
+      "sourceTableName": "regions"
+    }
+  }
+}

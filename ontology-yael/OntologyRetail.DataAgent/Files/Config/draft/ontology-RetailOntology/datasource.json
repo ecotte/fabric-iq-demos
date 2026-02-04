@@ -1,0 +1,132 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "f109d253-7bb1-82e1-42d0-1ea3c029ffae",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "RetailOntology",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "Order",
+      "is_selected": true,
+      "display_name": "Order",
+      "type": "ontology.entity",
+      "description": "OrderId,CustomerId,RegionId,OrderDateUtc,OrderStatus,IsExpedited,OrderTotalAmount,PaymentMethodType",
+      "children": []
+    },
+    {
+      "id": "Region",
+      "is_selected": true,
+      "display_name": "Region",
+      "type": "ontology.entity",
+      "description": "RegionId,WeatherDisruptionIndex,RegionName,TimestampUtc,CountryCode,TimezoneName,IsColdChainRequired",
+      "children": []
+    },
+    {
+      "id": "Product",
+      "is_selected": true,
+      "display_name": "Product",
+      "type": "ontology.entity",
+      "description": "ProductId,SellPriceAmount,ProductCategoryId,DiscountPercent,Sku,TimestampUtc,ProductName,BrandName,IsDiscontinued,LaunchDateUtc,UnitCostAmount",
+      "children": []
+    },
+    {
+      "id": "Forecast",
+      "is_selected": true,
+      "display_name": "Forecast",
+      "type": "ontology.entity",
+      "description": "ForecastId,ForecastUnits,ProductId,ForecastAmount,RegionId,ForecastConfidencePercent,DemandSignalId,TimestampUtc,ForecastHorizonDays,ForecastModelName",
+      "children": []
+    },
+    {
+      "id": "Customer",
+      "is_selected": true,
+      "display_name": "Customer",
+      "type": "ontology.entity",
+      "description": "CustomerId,CustomerEngagementScore,RegionId,TimestampUtc,CustomerEmail,LoyaltyTier,IsActiveCustomer,SignUpDateUtc,LifetimeValueAmount",
+      "children": []
+    },
+    {
+      "id": "Return",
+      "is_selected": true,
+      "display_name": "Return",
+      "type": "ontology.entity",
+      "description": "ReturnId,OrderId,ProductId,ReturnDateUtc,ReturnReason,RefundAmount",
+      "children": []
+    },
+    {
+      "id": "Store",
+      "is_selected": true,
+      "display_name": "Store",
+      "type": "ontology.entity",
+      "description": "StoreId,StoreFootTraffic,RegionId,StoreSalesAmount,StoreName,TimestampUtc,StoreType,OpenDateUtc",
+      "children": []
+    },
+    {
+      "id": "Warehouse",
+      "is_selected": true,
+      "display_name": "Warehouse",
+      "type": "ontology.entity",
+      "description": "WarehouseId,RegionId,WarehouseName,AddressLine1,CityName,StateOrProvince,PostalCode,IsCrossDock",
+      "children": []
+    },
+    {
+      "id": "Carrier",
+      "is_selected": true,
+      "display_name": "Carrier",
+      "type": "ontology.entity",
+      "description": "CarrierId,OnTimeDeliveryRate,CarrierName,FuelSurchargePercent,ServiceLevel,TimestampUtc,HasColdChainCapability,SupportPhone",
+      "children": []
+    },
+    {
+      "id": "DemandSignal",
+      "is_selected": true,
+      "display_name": "DemandSignal",
+      "type": "ontology.entity",
+      "description": "DemandSignalId,DemandUnits,ProductId,DemandAmount,RegionId,TimestampUtc,DemandChannel,SignalSourceSystem",
+      "children": []
+    },
+    {
+      "id": "OrderLine",
+      "is_selected": true,
+      "display_name": "OrderLine",
+      "type": "ontology.entity",
+      "description": "OrderLineId,OrderId,ProductId,Quantity,UnitPriceAmount,LineTotalAmount",
+      "children": []
+    },
+    {
+      "id": "ProductCategory",
+      "is_selected": true,
+      "display_name": "ProductCategory",
+      "type": "ontology.entity",
+      "description": "ProductCategoryId,CategoryName,DepartmentName,IsPerishable,ShelfLifeDays",
+      "children": []
+    },
+    {
+      "id": "Shipment",
+      "is_selected": true,
+      "display_name": "Shipment",
+      "type": "ontology.entity",
+      "description": "ShipmentId,InTransitTemperatureC,OrderId,InTransitHumidityPercent,CarrierId,CurrentLatitude,WarehouseId,CurrentLongitude,RegionId,DelayMinutes,TrackingNumber,TimestampUtc,ShipmentStatus,ShippedDateUtc,EstimatedDeliveryDateUtc,ActualDeliveryDateUtc",
+      "children": []
+    },
+    {
+      "id": "Promotion",
+      "is_selected": true,
+      "display_name": "Promotion",
+      "type": "ontology.entity",
+      "description": "PromotionId,ProductId,RegionId,PromotionName,StartDateUtc,EndDateUtc,DiscountPercent,IsActivePromotion",
+      "children": []
+    },
+    {
+      "id": "Inventory",
+      "is_selected": true,
+      "display_name": "Inventory",
+      "type": "ontology.entity",
+      "description": "InventoryId,OnHandQty,ProductId,AvailableQty,WarehouseId,BackorderQty,RegionId,InventoryValueAmount,SafetyStockQty,TimestampUtc,ReorderPointQty,LeadTimeDays",
+      "children": []
+    }
+  ]
+}
